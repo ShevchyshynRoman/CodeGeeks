@@ -1,0 +1,26 @@
+.footer {
+  margin: 0 auto;
+  height: 80px;
+  max-width: 1608px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #fff;
+  background-color: #202124;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__central-icons {
+
+  }
+
+  &__right-icons {
+
+  }
+}
+
