@@ -1,11 +1,12 @@
 .footer {
   margin: 0 auto;
+  padding-top: 45px;
   height: 80px;
   max-width: 1608px;
 
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
   color: #fff;
   background-color: #202124;
@@ -13,14 +14,79 @@
   &__title {
     font-size: 16px;
     font-weight: 500;
+    padding-right: 12px;
+
+    @media (max-width: 480px) {
+      display: none;
+    }
   }
 
   &__central-icons {
-
+    display: flex;
+    min-width: 276px;
+    flex-wrap: nowrap;
   }
 
   &__right-icons {
-
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 
+.centralIconStyle {
+  background-color: #3c4043;
+  padding: 8px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-right: 12px;
+
+  &:hover {
+    background-color: rgba(160,164,167, 0.25);
+  }
+}
+
+.CallEndIcon {
+  background-color: #ea4335;
+  padding: 8px 12px;
+  border-radius: 100px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(#ea4335, 0.95);
+  }
+}
+
+.RightIconStyle {
+  padding: 11px;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    border-radius: 50%;
+    background-color: rgba(232, 234, 237, 0.05);
+  }
+}
+
+.PeopleAltOutlinedIcon-container {
+  position: relative;
+  &__ppl-count {
+    position: absolute;
+    left: 25px;
+    top: -5px;
+
+    background-color: #5f6368;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 2px;
+    padding-top: 2px;
+  }
+}
