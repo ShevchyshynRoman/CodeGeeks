@@ -1,0 +1,72 @@
+.ShowMoreModal {
+  display: block;
+  padding: 8px 0;
+
+  background-color: #fff;
+  border-radius: 4px;
+  color: #000;
+}
+
+.list {
+  list-style: none;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+
+    &__text {
+      font-family: Roboto, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+
+      &__name {
+        line-height: 20px;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        font-weight: 400;
+        white-space: nowrap;
+      }
+
+      &__description {
+        line-height: 16px;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        font-weight: 400;
+        opacity: 80%;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(#dadce0, 0.2);
+    }
+
+    &--line {
+      height: 1px;
+      margin: 8px 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.12);
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+}
+
+.BorderColorOutlinedIcon,
+.RadioButtonCheckedOutlinedIcon,
+.DashboardOutlinedIcon,
+.FullscreenOutlinedIcon,
+.AutoAwesomeIcon,
+.ClosedCaptionOffIcon,
+.PhoneForwardedIcon,
+.FeedbackOutlinedIcon,
+.ReportOutlinedIcon,
+.SettingsOutlinedIcon,
+{
+  margin-right: 30px;
+  color: #5f6368;
+}

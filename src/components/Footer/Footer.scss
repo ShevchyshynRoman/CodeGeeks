@@ -90,3 +90,12 @@
     padding-top: 2px;
   }
 }
+
+.MoreVertIcon-container {
+  position: relative;
+
+  &__ShowMoreModal {
+    position: absolute;
+    top: -505px;
+  }
+}

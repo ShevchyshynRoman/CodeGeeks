@@ -10,6 +10,8 @@ type Props = {
   offVideo?: boolean,
   offMicro?: boolean,
   isSpeak?: boolean,
+  personId: number,
+  getRandomImage: (id: number) => void,
 };
 
 export const Person: React.FC<Props> = ({
@@ -18,12 +20,15 @@ export const Person: React.FC<Props> = ({
   offVideo,
   offMicro,
   isSpeak,
+  getRandomImage,
+  personId,
 }) => {
-  // eslint-disable-next-line no-console
-  console.log(isSpeak);
-
   return (
     <div
+      onClick={() => getRandomImage(personId)}
+      onKeyPress={() => false}
+      tabIndex={0}
+      role="button"
       className={cn(
         'person',
         { 'person--speak': isSpeak },

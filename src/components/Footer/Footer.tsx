@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './Footer.scss';
 
 import KeyboardVoiceIcon from '@mui/icons-material/KeyboardVoice';
@@ -11,6 +11,9 @@ import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
+import { ShowMoreModal } from './ShowMoreModal/ShowMoreModal';
+// eslint-disable-next-line import/no-named-as-default
+import useOnClickOutside from '../../hooks/useonClickOutside';
 
 const centralIconSize = {
   width: '40px',
@@ -28,6 +31,11 @@ const callEndIconSize = {
 };
 
 export const Footer = () => {
+  const [ShowMoreModalVisible, setShowMoreModalVisible] = useState(false);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useOnClickOutside(modalRef, () => setShowMoreModalVisible(false));
+
   return (
     <footer className="footer">
       <h1 className="footer__title">
@@ -55,10 +63,24 @@ export const Footer = () => {
           className="centralIconStyle"
         />
 
-        <MoreVertIcon
-          style={centralIconSize}
-          className="centralIconStyle"
-        />
+        <div
+          ref={modalRef}
+          className="MoreVertIcon-container"
+        >
+          <MoreVertIcon
+            style={centralIconSize}
+            className="centralIconStyle"
+            onClick={() => {
+              setShowMoreModalVisible(!ShowMoreModalVisible);
+            }}
+          />
+
+          <div className="MoreVertIcon-container__ShowMoreModal">
+            {ShowMoreModalVisible && (
+              <ShowMoreModal setModalVisible={setShowMoreModalVisible} />
+            )}
+          </div>
+        </div>
 
         <CallEndIcon
           style={callEndIconSize}
