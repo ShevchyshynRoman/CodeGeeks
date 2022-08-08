@@ -110,5 +110,9 @@
   &__ShowMoreModal {
     position: absolute;
     top: -505px;
+
+    @media (max-width: 650px) {
+      left: -250px;
+    }
   }
 }

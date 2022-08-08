@@ -9,6 +9,7 @@ import ClosedCaptionOffIcon from '@mui/icons-material/ClosedCaptionOff';
 import PhoneForwardedIcon from '@mui/icons-material/PhoneForwarded';
 import FeedbackOutlinedIcon from '@mui/icons-material/FeedbackOutlined';
 import ReportOutlinedIcon from '@mui/icons-material/ReportOutlined';
+import SearchIcon from '@mui/icons-material/Search';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import { ListModal } from '../ListModal/ListModal';
 
@@ -250,7 +251,7 @@ export const ShowMoreModal: React.FC<Props> = () => {
             onClick={() => onListItemClick('Вирішення проблем і довідка')}
             onKeyDown={() => onListItemClick('Вирішення проблем і довідка')}
           >
-            <RadioButtonCheckedOutlinedIcon
+            <SearchIcon
               style={iconSize}
               className="RadioButtonCheckedOutlinedIcon"
             />

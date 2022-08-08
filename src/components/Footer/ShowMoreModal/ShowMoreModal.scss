@@ -5,6 +5,10 @@
   background-color: #fff;
   border-radius: 4px;
   color: #000;
+
+  @media (max-width: 650px) {
+    max-width: 400px;
+  }
 }
 
 .list {
@@ -31,11 +35,11 @@
       }
 
       &__description {
+        color: #5f6368;
         line-height: 16px;
         font-size: 12px;
         letter-spacing: 0.3px;
         font-weight: 400;
-        opacity: 80%;
       }
     }
 
