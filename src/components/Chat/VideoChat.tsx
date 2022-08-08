@@ -87,6 +87,7 @@ export const VideoChat = () => {
 
       setPersons(updatedPerson);
     } catch {
+      // eslint-disable-next-line no-alert
       alert('error');
     }
   };

@@ -12,8 +12,7 @@ import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
 import { ShowMoreModal } from './ShowMoreModal/ShowMoreModal';
-// eslint-disable-next-line import/no-named-as-default
-import useOnClickOutside from '../../hooks/useonClickOutside';
+import { useOnClickOutside } from '../../hooks/useonClickOutside';
 
 const centralIconSize = {
   width: '40px',

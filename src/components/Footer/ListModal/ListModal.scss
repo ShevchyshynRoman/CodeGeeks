@@ -1,0 +1,40 @@
+.ListModal {
+  width: 360px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  bottom: 80px;
+
+  background-color: #fff;
+  border-radius: 4px;
+  color: #000;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-shadow: rgba(48, 48, 48, 0.3) 0 1px 4px 0;
+
+    &__text {
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+   &__button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     padding: 11px;
+     color: #444746;
+
+     &:hover {
+       border-radius: 50%;
+       background-color: rgba(232, 234, 237, 0.3);
+     }
+   }
+  }
+}

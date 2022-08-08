@@ -15,5 +15,3 @@ export const useOnClickOutside = (ref: RefObject<HTMLDivElement>, handler: () =>
     };
   });
 };
-
-export default useOnClickOutside;

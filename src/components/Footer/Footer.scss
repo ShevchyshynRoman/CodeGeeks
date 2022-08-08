@@ -11,13 +11,20 @@
   color: #fff;
   background-color: #202124;
 
+  @media (max-width: 650px) {
+    flex-direction: column;
+    padding-top: 10px;
+    height: 130px;
+  }
+
   &__title {
     font-size: 16px;
     font-weight: 500;
     padding-right: 12px;
 
-    @media (max-width: 480px) {
-      display: none;
+    @media (max-width: 650px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
   }
 
@@ -28,8 +35,14 @@
   }
 
   &__right-icons {
+    padding-left: 50px;
     display: flex;
     flex-wrap: nowrap;
+
+    @media (max-width: 650px) {
+      padding-left: 0;
+      margin: 0 auto;
+    }
   }
 }
 
